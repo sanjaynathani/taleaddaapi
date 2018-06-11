@@ -26,7 +26,7 @@ public class ReadBoardController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/story/{id}")
-    public Story getStoryById(@PathVariable Long id){
-        return storyRepository.findStoryByStoryId(id);
+    public Story getStoryById(@PathVariable String id){
+        return storyRepository.findStoryById(id);
     }
 }

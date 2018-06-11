@@ -9,5 +9,5 @@ import java.util.List;
 
 public interface StoryRepository extends MongoRepository<Story, String> {
 
-    Story findStoryByStoryId(@Param("storyId") Long storyId);
+    Story findStoryById(@Param("id") String id);
 }
