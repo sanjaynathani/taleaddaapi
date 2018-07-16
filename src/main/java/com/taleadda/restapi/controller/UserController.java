@@ -26,7 +26,7 @@ public class UserController {
         return userRepository.findUserByUsernameAndPassword(userInfo.getUsername(), userInfo.getPassword());
     }
 
-    @PostMapping("/createuser")
+    @PostMapping("/createUser")
     public User addUser(@RequestBody User userInfo){
         return userRepository.insert(userInfo);
     }

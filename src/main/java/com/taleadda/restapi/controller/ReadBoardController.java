@@ -30,7 +30,7 @@ public class ReadBoardController {
         return storyRepository.findStoryById(id);
     }
 
-    @DeleteMapping(value = "/story/{id}")
+    @DeleteMapping(value = "/deleteStory/{id}")
     public void deleteStoryById(@PathVariable String id){
         storyRepository.deleteById(id);
     }
